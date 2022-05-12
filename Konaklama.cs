@@ -26,7 +26,9 @@ namespace YazilimMimariTasarim
 
         private void cadirBtn_Click(object sender, EventArgs e)
         {
-
+            CadirForm cadir = new CadirForm();
+            cadir.StartPosition = FormStartPosition.CenterScreen;
+            cadir.ShowDialog();
         }
     }
 }

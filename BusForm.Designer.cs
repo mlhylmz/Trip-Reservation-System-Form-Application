@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 75);
+            this.label1.Location = new System.Drawing.Point(265, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 13);
             this.label1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(69, 183);
+            this.comboBox1.Location = new System.Drawing.Point(25, 46);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
@@ -54,17 +54,17 @@
             // 
             // goruntuleBtn
             // 
-            this.goruntuleBtn.Location = new System.Drawing.Point(69, 280);
+            this.goruntuleBtn.Location = new System.Drawing.Point(25, 113);
             this.goruntuleBtn.Name = "goruntuleBtn";
-            this.goruntuleBtn.Size = new System.Drawing.Size(75, 23);
+            this.goruntuleBtn.Size = new System.Drawing.Size(170, 40);
             this.goruntuleBtn.TabIndex = 2;
-            this.goruntuleBtn.Text = "button1";
+            this.goruntuleBtn.Text = "Seferi Görüntüle";
             this.goruntuleBtn.UseVisualStyleBackColor = true;
             this.goruntuleBtn.Click += new System.EventHandler(this.goruntuleBtn_Click);
             // 
             // satinAlBtn
             // 
-            this.satinAlBtn.Location = new System.Drawing.Point(213, 279);
+            this.satinAlBtn.Location = new System.Drawing.Point(25, 191);
             this.satinAlBtn.Name = "satinAlBtn";
             this.satinAlBtn.Size = new System.Drawing.Size(75, 23);
             this.satinAlBtn.TabIndex = 3;
@@ -76,11 +76,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 450);
+            this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.satinAlBtn);
             this.Controls.Add(this.goruntuleBtn);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "BusForm";
             this.Text = "BusForm";
             this.Load += new System.EventHandler(this.BusForm_Load);

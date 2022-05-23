@@ -38,7 +38,7 @@ namespace YazilimMimariTasarim
         {
             int comboId = Int32.Parse(comboBox1.SelectedItem.ToString()) - 1;
             label1.Text = "Sefer İsmi : " + data.getbusName(comboId) + "\nSefer Tarihi : " + data.getbusDay(comboId) + "." + data.getbusMonth(comboId) + ".2022"+
-                "\nBoş Yer Sayısı : " + data.getbusEmpty(comboId) + "\nBilet Fiyatı : "+ data.getbusPrice(comboId) + " TL";
+                "\nBoş Yer Sayısı : " + data.getbusEmpty(comboId) + "\nBilet Fiyatı : "+ data.getbusPrice(comboId).ToString() + " TL";
 
             if(data.getbusEmpty(comboId) == 0){
                 satinAlBtn.Enabled = false;

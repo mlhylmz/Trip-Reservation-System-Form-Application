@@ -47,84 +47,94 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusClass.cs" />
-    <Compile Include="BusForm.cs">
+    <Compile Include="FORMS\BusForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BusForm.Designer.cs">
+    <Compile Include="FORMS\BusForm.Designer.cs">
       <DependentUpon>BusForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CadirClass.cs" />
-    <Compile Include="CadirForm.cs">
+    <Compile Include="FORMS\CadirForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadirForm.Designer.cs">
+    <Compile Include="FORMS\CadirForm.Designer.cs">
       <DependentUpon>CadirForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Client.cs" />
     <Compile Include="IKonaklama.cs" />
-    <Compile Include="Konaklama.cs">
+    <Compile Include="FORMS\Konaklama.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Konaklama.Designer.cs">
+    <Compile Include="FORMS\Konaklama.Designer.cs">
       <DependentUpon>Konaklama.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="FORMS\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="FORMS\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OtelClass.cs" />
-    <Compile Include="OtelForm.cs">
+    <Compile Include="FORMS\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OtelForm.Designer.cs">
+    <Compile Include="FORMS\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtelClass.cs" />
+    <Compile Include="FORMS\OtelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\OtelForm.Designer.cs">
       <DependentUpon>OtelForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SatinAl.cs">
+    <Compile Include="FORMS\SatinAl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SatinAl.Designer.cs">
+    <Compile Include="FORMS\SatinAl.Designer.cs">
       <DependentUpon>SatinAl.cs</DependentUpon>
     </Compile>
     <Compile Include="Seyahat.cs" />
     <Compile Include="IUlasim.cs" />
-    <Compile Include="Ulasim.cs">
+    <Compile Include="FORMS\Ulasim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ulasim.Designer.cs">
+    <Compile Include="FORMS\Ulasim.Designer.cs">
       <DependentUpon>Ulasim.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcakForm.cs">
+    <Compile Include="FORMS\UcakForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UcakForm.Designer.cs">
+    <Compile Include="FORMS\UcakForm.Designer.cs">
       <DependentUpon>UcakForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UcakClass.cs" />
-    <EmbeddedResource Include="BusForm.resx">
+    <EmbeddedResource Include="FORMS\BusForm.resx">
       <DependentUpon>BusForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadirForm.resx">
+    <EmbeddedResource Include="FORMS\CadirForm.resx">
       <DependentUpon>CadirForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Konaklama.resx">
+    <EmbeddedResource Include="FORMS\Konaklama.resx">
       <DependentUpon>Konaklama.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="FORMS\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OtelForm.resx">
+    <EmbeddedResource Include="FORMS\OtelForm.resx">
       <DependentUpon>OtelForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ulasim.resx">
+    <EmbeddedResource Include="FORMS\Ulasim.resx">
       <DependentUpon>Ulasim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SatinAl.resx">
+    <EmbeddedResource Include="FORMS\SatinAl.resx">
       <DependentUpon>SatinAl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcakForm.resx">
+    <EmbeddedResource Include="FORMS\UcakForm.resx">
       <DependentUpon>UcakForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

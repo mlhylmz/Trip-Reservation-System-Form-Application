@@ -8,6 +8,14 @@ namespace YazilimMimariTasarim
 {
     internal class Seyahat
     {
+        //REZERVASYON BİLGİLERİ
+        /// <summary>
+        /// Name : İsimler
+        /// Day : Günler
+        /// Month : Aylar
+        /// Empty : Boş yer sayısı
+        /// Price : Bilet Fiyatı
+        /// </summary>
         string[] flightsName = { "Manisa-İzmir", "Manisa-İstanbul", "İstanbul-İzmir", "İzmir-İstanbul" };
         string[] flightsDay = { "10", "11", "10", "12" };
         string[] flightsMonth = { "5", "5", "5", "5" };
@@ -32,12 +40,13 @@ namespace YazilimMimariTasarim
         public static int[] cadirEmpty = { 2, 6, 2, 7 };
         int[] cadirPrice = { 100, 200, 150, 150 };
 
-        public static string ulasimChoice = "default";
-        public static string konaklamaChoice = "default";
-        public static int type = 0;
-        public static int selectedCombo = 0;
+        // SEÇİMLER
+        public static string ulasimChoice = "default"; // Uçak Otobüs Seçimi
+        public static string konaklamaChoice = "default"; // Otel Çadır Seçimi
+        public static int type = 0; // Ulaşım Konaklama Seçimi
+        public static int selectedCombo = 0; // Sefer Combobox Seçimi
 
-
+        // GETTER SETTER
         public string getflightName(int id) { return flightsName[id]; }
         public string getflightDay(int id) { return flightsDay[id]; }
         public string getflightMonth(int id) { return flightsMonth[id]; }
@@ -72,15 +81,18 @@ namespace YazilimMimariTasarim
         public  int getcadirPrice(int id) { return cadirPrice[id]; }
         public int getmaxCadir() { return cadirName.Length; }
 
+        // Ulaşım Seçimi
         public void setUChoice(string choicee) { ulasimChoice = choicee; }
         public string getUchoice() { return ulasimChoice; }
 
+        // Konaklama Seçimi
         public void setKChoice(string choicee) { konaklamaChoice = choicee; }
         public string getKchoice() { return konaklamaChoice; }
 
         public void setType(int typee) { type = typee; }
         public int getType() { return type; }
 
+        // Combobox anlık Id Alım
         public void setCombo(int commbo) { selectedCombo = commbo; }
         public int getcombo() { return selectedCombo; }
 

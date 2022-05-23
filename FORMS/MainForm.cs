@@ -36,6 +36,7 @@ namespace YazilimMimariTasarim
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // GÖRSEL İŞLEMLER
             label1.Text = "Hoşgeldin " + data.getNames(data.getTempId()) + ". Alım işlemi yapmak istediğin kategoriyi seçiniz.";
             pictureBox1.Image = Image.FromFile("C:\\Users\\Melih Yılmaz\\source\\repos\\YazilimMimariTasarim\\Photos\\Background.jpg");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;

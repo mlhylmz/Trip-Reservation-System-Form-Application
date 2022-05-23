@@ -19,8 +19,10 @@ namespace YazilimMimariTasarim
             InitializeComponent();
         }
 
+        //GİRİŞ BUTONU
         private void girisBtn_Click(object sender, EventArgs e)
         {
+            // KULLANICI TEXTBOX'A VERİ GİRDİ Mi?
             if (textBox1.TextLength > 1 && passTextBox.TextLength > 1)
             {
                 int id = data.IdFounder(textBox1.Text, passTextBox.Text);
@@ -50,8 +52,10 @@ namespace YazilimMimariTasarim
 
         private void kayitBtn_Click(object sender, EventArgs e)
         {
+            // KULLANICI TEXTBOX'A VERİ GİRDİ Mİ?
             if (textBox1.TextLength > 1 && cashTextBox.TextLength > 1 && passTextBox.TextLength > 1)
             {
+                // Girilen veri ile Id bulma
                 int id = data.IdFounder(textBox1.Text, passTextBox.Text);
 
                 //Kullanıcı bulunursa
@@ -75,6 +79,7 @@ namespace YazilimMimariTasarim
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            // BUTON VE TEXTBOX PASİFLEŞTİRME
             girisBtn.Enabled = false;
             kayitBtn.Enabled = false;
             cashTextBox.Enabled = false;
@@ -83,7 +88,7 @@ namespace YazilimMimariTasarim
 
         private void girisRadio_CheckedChanged(object sender, EventArgs e)
         {
-            if (girisRadio.Checked)
+            if (girisRadio.Checked)// Giriş ile ilgili araçları görünür yapma
             {
                 girisBtn.Enabled = true;
                 kayitBtn.Enabled = false;
@@ -95,7 +100,7 @@ namespace YazilimMimariTasarim
 
         private void kayitRadio_CheckedChanged(object sender, EventArgs e)
         {
-            if (kayitRadio.Checked)
+            if (kayitRadio.Checked)// Kayıt ile ilgili araçları görünür yapma
             {
                 kayitBtn.Enabled = true;
                 cashTextBox.Enabled = true;

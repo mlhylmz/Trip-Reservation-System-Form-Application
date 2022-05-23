@@ -24,8 +24,11 @@ namespace YazilimMimariTasarim
 
         private void SatinAl_Load(object sender, EventArgs e)
         {
+            // Arkaplan resim
             pictureBox1.Image = Image.FromFile("C:\\Users\\Melih Yılmaz\\source\\repos\\YazilimMimariTasarim\\Photos\\Buy.jpg");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            //  Hangi işlem yapıldığını bulma
             if (data.getType() == 1)
             {
                 choiceLabel.Text = "Seçilen Taşıt : " + data.getUchoice() + "\nSeçilen Sefer : " + (data.getcombo() + 1);
@@ -42,14 +45,17 @@ namespace YazilimMimariTasarim
             }
         }
 
+        //  SATIN ALMA İŞLEMİ
         private void button1_Click(object sender, EventArgs e)
         {
+            // Ulaşım işlemleri
             if (type == 1)
             {
-                if(data.getUchoice() == "bus")
+                if(data.getUchoice() == "bus")// Otobüs
                 {
-                    if(kullanici.getCash(kullanici.getTempId()) > data.getbusPrice(combo))
+                    if(kullanici.getCash(kullanici.getTempId()) > data.getbusPrice(combo))// Bakiye Kontrol İşlemi
                     {
+                        // Boş yer ve bakiye azaltma işlemi
                         data.setBusEmptyBuy(combo);
                         kullanici.setAfterBuyCash(data.getbusPrice(combo));
                         MessageBox.Show("Bilet satın alındı.\nYeni boş yer sayısı: " + data.getbusEmpty(combo) + "\nYeni bakiyeniz : " + kullanici.getCash(kullanici.getTempId()));
@@ -63,10 +69,11 @@ namespace YazilimMimariTasarim
                     }
                     
                 }
-                else if(data.getUchoice() == "ucak")
+                else if(data.getUchoice() == "ucak")// Uçak
                 {
-                    if(kullanici.getCash(kullanici.getTempId()) > data.getflightPrice(combo))
+                    if(kullanici.getCash(kullanici.getTempId()) > data.getflightPrice(combo))// Bakiye Kontrol İşlemi
                     {
+                        // Boş yer ve bakiye azaltma işlemi
                         data.setFlightEmptyBuy(combo);
                         kullanici.setAfterBuyCash(data.getflightPrice(combo));
                         MessageBox.Show("Bilet satın alındı.\nYeni boş yer sayısı : " + data.getflightEmpty(combo) + "\nYeni bakiyeniz : " + kullanici.getCash(kullanici.getTempId()));
@@ -80,12 +87,14 @@ namespace YazilimMimariTasarim
                     
                 }
             }
+            // Konaklama İşlemleri
             else if (type == 2)
             {
-                if(data.getKchoice() == "otel")
+                if(data.getKchoice() == "otel")// Otel
                 {
-                    if (kullanici.getCash(kullanici.getTempId()) > data.getotelPrice(combo))
+                    if (kullanici.getCash(kullanici.getTempId()) > data.getotelPrice(combo))// Bakiye Kontrol İşlemi
                     {
+                        // Boş yer ve bakiye azaltma işlemi
                         data.setHotelEmptyBuy(combo);
                         kullanici.setAfterBuyCash(data.getotelPrice(combo));
                         MessageBox.Show("Bilet satın alındı.\nYeni boş yer sayısı : " + data.getotelEmpty(combo) + "\nYeni bakiyeniz : " + kullanici.getCash(kullanici.getTempId()));
@@ -98,10 +107,11 @@ namespace YazilimMimariTasarim
                     }
 
                 }
-                else if (data.getKchoice() == "cadir")
+                else if (data.getKchoice() == "cadir")// Çadır
                 {
-                    if (kullanici.getCash(kullanici.getTempId()) > data.getcadirPrice(combo))
+                    if (kullanici.getCash(kullanici.getTempId()) > data.getcadirPrice(combo))// Bakiye Kontrol İşlemi
                     {
+                        // Boş yer ve bakiye azaltma işlemi
                         data.setCadirEmptyBuy(combo);
                         kullanici.setAfterBuyCash(data.getcadirPrice(combo));
                         MessageBox.Show("Bilet satın alındı.\nYeni boş yer sayısı : " + data.getcadirEmpty(combo));

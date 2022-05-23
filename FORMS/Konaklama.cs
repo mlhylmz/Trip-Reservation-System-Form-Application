@@ -35,6 +35,7 @@ namespace YazilimMimariTasarim
 
         private void Konaklama_Load(object sender, EventArgs e)
         {
+            // ARKAPLAN RESİM AYARI
             pictureBox1.Image = Image.FromFile("C:\\Users\\Melih Yılmaz\\source\\repos\\YazilimMimariTasarim\\Photos\\Accom.jpg");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }

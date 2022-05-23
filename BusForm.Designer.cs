@@ -32,6 +32,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.goruntuleBtn = new System.Windows.Forms.Button();
             this.satinAlBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -72,6 +74,14 @@
             this.satinAlBtn.UseVisualStyleBackColor = true;
             this.satinAlBtn.Click += new System.EventHandler(this.satinAlBtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(485, 460);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // BusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -81,10 +91,12 @@
             this.Controls.Add(this.goruntuleBtn);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "BusForm";
             this.Text = "BusForm";
             this.Load += new System.EventHandler(this.BusForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,5 +108,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button goruntuleBtn;
         private System.Windows.Forms.Button satinAlBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

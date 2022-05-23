@@ -15,6 +15,7 @@ namespace YazilimMimariTasarim
         
         public MainForm()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
         }
 
@@ -30,6 +31,12 @@ namespace YazilimMimariTasarim
             Konaklama konak = new Konaklama();
             konak.StartPosition = FormStartPosition.CenterScreen;
             konak.ShowDialog();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Melih Yılmaz\\source\\repos\\YazilimMimariTasarim\\Photos\\Background.jpg");
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }

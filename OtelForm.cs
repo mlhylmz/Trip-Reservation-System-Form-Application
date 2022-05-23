@@ -47,6 +47,8 @@ namespace YazilimMimariTasarim
 
         private void OtelForm_Load(object sender, EventArgs e)
         {
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Melih Yılmaz\\source\\repos\\YazilimMimariTasarim\\Photos\\Hotel.jpg");
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             goruntuleBtn.Enabled = false;
             satinAlBtn.Enabled = false;
             comboBox1.Items.Add("1");

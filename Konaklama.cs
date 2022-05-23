@@ -22,6 +22,7 @@ namespace YazilimMimariTasarim
             OtelForm otel = new OtelForm();
             otel.StartPosition = FormStartPosition.CenterScreen;
             otel.ShowDialog();
+            this.Close();
         }
 
         private void cadirBtn_Click(object sender, EventArgs e)
@@ -29,6 +30,13 @@ namespace YazilimMimariTasarim
             CadirForm cadir = new CadirForm();
             cadir.StartPosition = FormStartPosition.CenterScreen;
             cadir.ShowDialog();
+            this.Close();
+        }
+
+        private void Konaklama_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Melih Yılmaz\\source\\repos\\YazilimMimariTasarim\\Photos\\Accom.jpg");
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }

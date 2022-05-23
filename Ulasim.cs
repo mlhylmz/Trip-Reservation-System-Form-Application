@@ -22,6 +22,7 @@ namespace YazilimMimariTasarim
             UcakForm ucakForm = new UcakForm();
             ucakForm.StartPosition = FormStartPosition.CenterScreen;
             ucakForm.ShowDialog();
+            this.Close();
         }
 
         private void busBtn_Click(object sender, EventArgs e)
@@ -29,6 +30,13 @@ namespace YazilimMimariTasarim
             BusForm busForm = new BusForm();
             busForm.StartPosition = FormStartPosition.CenterScreen;
             busForm.ShowDialog();
+            this.Close();
+        }
+
+        private void Ulasim_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Melih Yılmaz\\source\\repos\\YazilimMimariTasarim\\Photos\\Transport.jpg");
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }
